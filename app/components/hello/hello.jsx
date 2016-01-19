@@ -1,8 +1,6 @@
 import './hello.scss';
 import React from 'react';
 
-export default () => <div classsName="nav">Hello World ;)</div>;
-
 export default class Hello extends React.Component {
   render() {
 
