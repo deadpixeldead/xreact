@@ -29,13 +29,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/costacruise/web-prototype-journey.git"
+    "url": "git+https://github.com/awitherow/minimal-react"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/costacruise/web-prototype-journey/issues"
+    "url": "https://github.com/awitherow/minimal-react/issues"
   },
-  "homepage": "https://github.com/costacruise/web-prototype-journey#readme"
+  "homepage": "https://github.com/awitherow/minimal-react/blob/master/README.md
 }
