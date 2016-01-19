@@ -1,7 +1,7 @@
 {
-  "name": "web-prototype-journey",
+  "name": "minimal-react",
   "version": "1.0.0",
-  "description": "*explore ships and destinations. serving your perfect cruise.*",
+  "description": "minimal react starter kit",
   "main": "index.js",
   "dependencies": {
     "react": "^0.14.6",

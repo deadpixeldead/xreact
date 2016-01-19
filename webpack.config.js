@@ -25,7 +25,7 @@ const common = {
   plugins: [
     new HtmlwebpackPlugin({
       template: 'utils/index.html',
-      title: 'Costa Prototype Template',
+      title: 'Minimal React Starter Kit',
       appMountId: 'app'
     })
   ],
