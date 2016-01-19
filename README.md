@@ -7,4 +7,4 @@ my minimal react starter kit.
 npm install && npm start
 ```
 
-navigate to [http://localhost:8080](localhost:8080) to see your dev environment. live reloading enabled ;)
+navigate to [http://localhost:8080](http://localhost:8080) to see your dev environment. live reloading enabled ;)
