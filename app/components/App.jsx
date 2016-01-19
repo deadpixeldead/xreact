@@ -1,8 +1,8 @@
 import React from 'react';
-import Hello from './hello/hello.jsx';
+import CommentForm from './examples/commentForm/commentForm.jsx';
 
 export default class App extends React.Component {
   render() {
-    return <Hello />;
+    return <CommentForm />;
   }
 }
