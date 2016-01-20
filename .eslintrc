@@ -1,0 +1,7 @@
+{
+    "plugins": [
+      "babel"
+    ],
+    "extends": ["xo/esnext", "xo-react"],
+    "indent": [1, "tab"]
+}
