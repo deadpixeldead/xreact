@@ -2,5 +2,8 @@
     "plugins": [
       "babel"
     ],
-    "extends": ["xo/esnext", "xo-react"]
+    "extends": [
+        "xo/esnext",
+        "xo-react"
+    ]
 }

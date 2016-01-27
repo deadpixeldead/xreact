@@ -5,18 +5,18 @@ my minimal react starter kit.
 
 ```
 npm install
-npm run watchify
+npm build
+npm start
+```
+navigate to [http://localhost:8080](localhost:8080) to see your dev environment. live reloading enabled ;)
+
+to deploy to your personal git page...
+
+```
+npm run build
+npm run deploy
 ```
 
-open a new tab/window in the terminal
-
-```
-node server.js
-```
-
-Navigate to [http://localhost:8080](http://localhost:8080) to see your dev environment.
-
-Mess around with the App.jsx file in the ```components``` folder, you'll then be able to see the multiple examples that are available.
 
 ## current examples
 

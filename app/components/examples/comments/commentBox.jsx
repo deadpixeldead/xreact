@@ -3,12 +3,7 @@ import $ from 'jquery';
 import CommentForm from './commentForm.jsx';
 import CommentList from './commentList.jsx';
 
-import styles from './comment.css';
-
 export default class CommentBox extends React.Component {
-	// getInitialState is called once, on init.
-	state = {data: []};
-
 	loadCommentsFromServer() {
 		$.ajax({
 			url: this.props.url,
@@ -21,19 +16,20 @@ export default class CommentBox extends React.Component {
 			}
 		});
 	}
-
-	// this is called after first render.
+	handleCommentSubmit() {
+		// TODO: submit to server & refresh list
+	}
+	state = {data: []};
 	componentDidMount() {
 		this.loadCommentsFromServer();
 		setInterval(this.loadCommentsFromServer, this.props.pollInterval);
 	}
-
 	render() {
 		return (
-			<div className={styles.box}>
+			<div className="commentBox">
 				<h1>Comments</h1>
 				<CommentList data={this.state.data}/>
-				<CommentForm />
+				<CommentForm onSubmit={this.handleCommentSubmit}/>
 			</div>
 			);
 	}
