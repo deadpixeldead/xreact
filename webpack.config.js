@@ -15,14 +15,14 @@ process.env.BABEL_ENV = TARGET;
 const common = {
 	entry: PATHS.app,
 	resolve: {
-		extensions: ['', '.js', '.jsx']
+		extensions: ['', '.js', '.jsx'] // app consists of these files
 	},
 	output: {
 		path: PATHS.build,
-		filename: 'bundle.js'
+		filename: 'bundle.js' // is bundled into the build folder as bundle
 	},
 	plugins: [
-		new HtmlwebpackPlugin({
+		new HtmlwebpackPlugin({ // deploys html file every time built.
 			template: './utils/index.html',
 			title: 'Costa Magic Mirror',
 			appMountId: 'app',
@@ -31,11 +31,11 @@ const common = {
 	],
 	module: {
 		loaders: [
-			{
+			{   // checks scss
 				test: /\.scss$/,
 				loader: 'style!css!sass'
 			},
-			{
+			{   // handles next gen javascript
 				test: /\.jsx?$/,
 				loaders: ['babel?cacheDirectory'],
 				include: PATHS.app
@@ -44,7 +44,7 @@ const common = {
 	}
 };
 
-if (TARGET === 'start' || !TARGET) {
+if (TARGET === 'start' || !TARGET) { // creates dev environment
 	module.exports = merge(common, {
 		devtool: 'eval-source-map',
 		devServer: {
@@ -66,10 +66,10 @@ if (TARGET === 'build') {
 	module.exports = merge(common, {
 		plugins: [
 			new webpack.DefinePlugin({
-				'process.env.NODE_ENV': JSON.stringify('production')
+				'process.env.NODE_ENV': JSON.stringify('production') // really cuts down file size of bundle
 			}),
-			new Clean(['.'], PATHS.build),
-			new webpack.optimize.UglifyJsPlugin({
+			new Clean(['.'], PATHS.build), // cleans build path pre-build
+			new webpack.optimize.UglifyJsPlugin({ // cuts down bundle size.
 				compress: {
 					warnings: false
 				}
