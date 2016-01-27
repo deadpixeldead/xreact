@@ -3,10 +3,10 @@ my minimal react starter kit.
 
 ## Installation
 
+to work on your development environment...
+
 ```
-npm install
-npm build
-npm start
+npm install && npm build && npm start
 ```
 navigate to [http://localhost:8080](localhost:8080) to see your dev environment. live reloading enabled ;)
 
