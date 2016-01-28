@@ -24,7 +24,7 @@ const common = {
 	plugins: [
 		new HtmlwebpackPlugin({ // deploys html file every time built.
 			template: './utils/index.html',
-			title: 'Costa Magic Mirror',
+			title: 'minimal-react',
 			appMountId: 'app',
 			hash: true
 		})

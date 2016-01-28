@@ -17,6 +17,9 @@ npm run build
 npm run deploy
 ```
 
+## Editor Modifications
+
+Recommended to install *eslint* in the browser for error detection.
 
 ## current examples
 
