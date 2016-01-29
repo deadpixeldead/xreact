@@ -1,0 +1,39 @@
+.flex {
+	display: flex;
+}
+
+.flex-cell {
+	flex: 1;
+}
+
+.flex-top {
+	align-items: flex-start;
+}
+
+.flex-bottom {
+	align-items: flex-end;
+}
+
+.flex-center {
+	align-items: center;
+}
+
+.flex-cell-top {
+	align-self: flex-start;
+}
+
+.flex-cell-bottom {
+	align-self: flex-end;
+}
+
+.flex-cell-center {
+	align-self: center;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.container {
+	padding: 25%;
+}
