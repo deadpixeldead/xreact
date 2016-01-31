@@ -6,14 +6,17 @@ my minimal react starter kit.
 to work on your development environment...
 
 ```
-npm i && npm run build && npm run start
+npm install 
+npm run build
+npm run start
 ```
 navigate to [http://localhost:8080](localhost:8080) to see your dev environment. live reloading enabled ;)
 
 to deploy to your personal git page...
 
 ```
-npm run build && npm run deploy
+npm run build
+npm run start
 ```
 
 can be viewed at *username*.github.com/*repo-name*, example at [awitherow.github.io/minimal-react/](http://awitherow.github.io/minimal-react/)
