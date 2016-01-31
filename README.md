@@ -24,4 +24,4 @@ can be viewed at *username*.github.com/*repo-name*, example at [awitherow.github
 
 ## Editor Modifications
 
-Recommended to install *eslint* in the browser for error detection.
+Recommended to install *eslint* in your text editor of choice for error detection.
