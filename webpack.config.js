@@ -1,7 +1,6 @@
 const path = require('path'); // handles & transforms file paths.
 const merge = require('webpack-merge'); // merges stuff, not sure really.
 const webpack = require('webpack'); // webpack runs this whole thing.
-const HtmlwebpackPlugin = require('html-webpack-plugin'); // helps serve webpack bundle.
 const Clean = require('clean-webpack-plugin'); // cleans build folder pre-build.
 
 const TARGET = process.env.npm_lifecycle_event;
@@ -21,14 +20,6 @@ const common = {
 		path: PATHS.build,
 		filename: 'bundle.js' // is bundled into the build folder as bundle
 	},
-	plugins: [
-		new HtmlwebpackPlugin({ // deploys html file every time built.
-			template: './utils/index.html',
-			title: 'xreact',
-			appMountId: 'app',
-			hash: true
-		})
-	],
 	module: {
 		loaders: [
 			{   // checks scss
