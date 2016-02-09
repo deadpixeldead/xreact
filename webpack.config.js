@@ -6,7 +6,7 @@ const Clean = require('clean-webpack-plugin'); // cleans build folder pre-build.
 
 const TARGET = process.env.npm_lifecycle_event;
 const PATHS = {
-	app: path.join(__dirname, 'app'),
+	app: path.join(__dirname, 'app/web'),
 	build: path.join(__dirname, 'build')
 };
 
@@ -24,7 +24,7 @@ const common = {
 	plugins: [
 		new HtmlwebpackPlugin({ // deploys html file every time built.
 			template: './utils/index.html',
-			title: 'minimal-react',
+			title: 'xreact',
 			appMountId: 'app',
 			hash: true
 		})

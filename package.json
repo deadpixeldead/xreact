@@ -1,12 +1,13 @@
 {
-  "name": "minimal-react",
+  "name": "xreact",
   "version": "1.0.0",
   "description": "minimal react starter kit",
   "main": "bundle.js",
   "dependencies": {
     "jquery": "^2.2.0",
     "react": "^0.14.6",
-    "react-dom": "^0.14.6"
+    "react-dom": "^0.14.6",
+	"react-native": "^0.19.0"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",
@@ -35,18 +36,19 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server",
+    "webstart": "webpack-dev-server",
+	"start": "node node_modules/react-native/local-cli/cli.js start",
     "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/awitherow/minimal-react"
+    "url": "git+https://github.com/awitherow/xreact"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/awitherow/minimal-react/issues"
+    "url": "https://github.com/awitherow/xreact/issues"
   },
-  "homepage": "https://github.com/awitherow/minimal-react/blob/master/README.md"
+  "homepage": "https://github.com/awitherow/xreact/blob/master/README.md"
 }
