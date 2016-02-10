@@ -28,7 +28,10 @@ const common = {
 			},
 			{   // handles next gen javascript
 				test: /\.jsx?$/,
-				loaders: ['babel?cacheDirectory'],
+				loader: 'babel',
+				query: {
+					presets: ['react', 'es2015', 'stage-0']
+				},
 				include: PATHS.app
 			}
 		]
