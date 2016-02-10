@@ -4,9 +4,9 @@
   "description": "minimal react starter kit",
   "main": "bundle.js",
   "dependencies": {
-    "react": "^0.14.6",
-    "react-dom": "^0.14.6",
-	"react-native": "^0.19.0"
+    "react": "*",
+    "react-dom": "*",
+	"react-native": "*"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",

@@ -1,5 +1,6 @@
 'use strict';
 import React from 'react-native';
-import JourneyProfile from './src/components/native/';
 
-React.AppRegistry.registerComponent('JourneyProfile', () => JourneyProfile);
+import xreact from './app/native/components/';
+
+React.AppRegistry.registerComponent('xreact', () => xreact);
