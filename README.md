@@ -10,6 +10,23 @@ Read their [docs](https://facebook.github.io/react-native/docs/getting-started.h
 
 **After this, instructions are made in the assumption that you've already played around with both ios, android & react web and have thoese dependencies already installed**.
 
+### Windows specific requirements:
+
+If you don't have python installed and set up, you will get some errors when trying to install. So first follow these steps:
+- Install python: http://www.python.org/getit/windows/
+- Install Microsoft Visual Studio C++ 2012 Express version: http://go.microsoft.com/?linkid=9816758
+- Install node-gyp:
+```
+npm install -g node-gyp
+```
+
+- Set your local python variable
+```
+set PYTHONPATH=%PYTHONPATH%;C:\Users\YOUR_USER_NAME\AppData\Local\Programs\Python\Python35-32\Lib
+set PYTHON=C:\Users\YOUR_USER_NAME\AppData\Local\Programs\Python\Python35-32\python.exe
+```
+
+
 ### Enabling React-Native Project
 
 To initialize a react-native project with your own project files...
@@ -46,7 +63,7 @@ npm install
 npm run build
 npm run webstart
 ```
-navigate to [http://localhost:8080](localhost:8080) to see your dev environment. live reloading enabled ;)
+navigate to [http://localhost:8080/build/](localhost:8080/build/) to see your dev environment. live reloading enabled ;)
 
 ** Terminal Window Two**
 
