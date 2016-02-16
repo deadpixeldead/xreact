@@ -13,6 +13,7 @@ Read their [docs](https://facebook.github.io/react-native/docs/getting-started.h
 ## Windows specific requirements:
 
 If you don't have python installed and set up, you will get some errors when trying to install. So first follow these steps:
+** Intsall version 2.7.11, newer versions are NOT supported (I learned it the hard way)**
 - Install python: http://www.python.org/getit/windows/
 - Install Microsoft Visual Studio C++ 2012 Express version: http://go.microsoft.com/?linkid=9816758
 - Install node-gyp:
@@ -26,13 +27,19 @@ set PYTHONPATH=%PYTHONPATH%;C:\Users\YOUR_USER_NAME\AppData\Local\Programs\Pytho
 set PYTHON=C:\Users\YOUR_USER_NAME\AppData\Local\Programs\Python\Python35-32\python.exe
 ```
 ### Install the Android SDK (unless you have it)
+
+Make sure you have enough disc space free, as the android images can be several gigabytes each.
 1. Install the latest [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](JDK)
 2. Install the Android SDK:
-[https://developer.android.com/sdk/installing/index.html?pkg=tools](Download from the Android website)
+[Download from the Android website](https://developer.android.com/sdk/installing/index.html?pkg=tools)
+**Make sure to install  (select it in the list):**
+- Android SDK Build-tools version 23.0.1
+- Android 6.0 (API 23)
+- Android Support Repository
 
 
 ### Install Genymotion Android Emulator
-1. Download and install [https://www.genymotion.com/](Genymotion).
+1. Download and install [Genymotion](https://www.genymotion.com/).
 2. Open Genymotion. It might ask you to install VirtualBox unless you already have it.
 3. Create a new emulator and start it.
 
