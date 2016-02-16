@@ -10,7 +10,7 @@ Read their [docs](https://facebook.github.io/react-native/docs/getting-started.h
 
 **After this, instructions are made in the assumption that you've already played around with both ios, android & react web and have thoese dependencies already installed**.
 
-### Windows specific requirements:
+## Windows specific requirements:
 
 If you don't have python installed and set up, you will get some errors when trying to install. So first follow these steps:
 - Install python: http://www.python.org/getit/windows/
@@ -25,8 +25,23 @@ npm install -g node-gyp
 set PYTHONPATH=%PYTHONPATH%;C:\Users\YOUR_USER_NAME\AppData\Local\Programs\Python\Python35-32\Lib
 set PYTHON=C:\Users\YOUR_USER_NAME\AppData\Local\Programs\Python\Python35-32\python.exe
 ```
+### Install the Android SDK (unless you have it)
+1. Install the latest [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](JDK)
+2. Install the Android SDK:
+[https://developer.android.com/sdk/installing/index.html?pkg=tools](Download from the Android website)
 
 
+### Install Genymotion Android Emulator
+1. Download and install [https://www.genymotion.com/](Genymotion).
+2. Open Genymotion. It might ask you to install VirtualBox unless you already have it.
+3. Create a new emulator and start it.
+
+### Define the ANDROID_HOME environment variable
+- go to Control Panel -> System and Security -> System -> Change settings -> Advanced -> Environment variables -> New
+```
+name:ANDROID_HOME
+var:C:\Program Files (x86)\Android\android-sdk
+```
 ### Enabling React-Native Project
 
 To initialize a react-native project with your own project files...
