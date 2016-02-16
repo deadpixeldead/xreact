@@ -10,6 +10,31 @@ Read their [docs](https://facebook.github.io/react-native/docs/getting-started.h
 
 **After this, instructions are made in the assumption that you've already played around with both ios, android & react web and have thoese dependencies already installed**.
 
+To initialize a react-native project with your own project files...
+
+- delete android & ios folders
+- run the following in the Terminal
+
+```
+react-native init YOUR_PROJECT_NAME
+```
+- after init, move ios & android folders from YOUR_PROJECT_NAME folder to the main repo folder.
+- rename project in package.
+- run the following in the Terminal
+
+```
+react-native upgrade
+```
+
+- change AppRegistry to
+
+```javascript
+AppRegistry.registerComponent('YOUR_PROJECT_NAME', () => YOUR_PROJECT_NAME);
+```
+**this should be found in the index.android.js and index.ios.js files. Ensure your entrance point in the app/native folder is also working**
+
+Now it should be working properly.
+
 **Terminal Window One**
 
 ```
