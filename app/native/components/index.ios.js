@@ -25,7 +25,7 @@ export default class xreact extends Component {
 		return (
 			<View style={styles.container}>
 				<Text style={styles.welcome}>
-					Welcome to React-Native iOS. 
+					Welcome to React-Native iOS.
 				</Text>
 			</View>
 		);
